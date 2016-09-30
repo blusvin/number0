@@ -1,0 +1,268 @@
+.axis path,
+.axis line{
+    fill: none;
+    stroke: rgba(40,40,40,1);
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+    fill: rgba(100,100,100,0.66);
+}
+html, body {
+  padding : 0px;
+  margin : 0px;
+  border : 0px;
+  height: 100%;
+  text-align: center;
+}
+.vmiddle{
+  position: absolute;
+  font: bold 16px/normal "Lucida Console", Monaco, monospace;
+  color: rgba(255,255,255,0.9);
+  text-shadow: 0px 0px 0 rgba(100,100,100,0.66) ;
+}
+#bluesetinner1{
+  position: absolute;
+  text-align: left;
+}
+#bluesetinner2{
+  position: absolute;
+  text-align: left;
+}
+#bluesetinner3{
+  position: absolute;
+  text-align: left;
+}
+input{
+  display: inline-block;
+  padding: 5px 0 5px 0;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid rgb(55,55,55);
+  font: normal 16px/normal "Lucida Console", Monaco, monospace;
+  color: rgba(100,100,100,1);
+  border-radius: 3px;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(25,25,25,1);
+  text-shadow: 0px 0px 0 rgba(15,73,168,0.66) ;
+}
+#logo {
+  padding : 0px;
+  margin : 0px;
+  border : 0px;
+  width: auto;
+  text-align: center;
+  background: rgb(30,30,30);
+}
+
+#bluenoti{
+  position: relative;
+  border-width: 0px 20px 0px 20px;
+  border-style:solid;
+  border-color: rgb(30,30,30);
+  background-color: rgb(30,30,30);
+}
+#bluenoti-inner{
+  position: relative;
+  border-radius: 10px 10px 0px 0px;
+  border-width: 0px 0px 1px 0px;
+  border-color: rgb(55,55,55);
+  z-index: 100;
+  border-style:solid;
+  background-color: rgb(25,25,25);
+}
+#notiin{
+  color: rgb(100,100,100);
+  text-shadow: 0px 0px 0 rgba(100,100,100,0.66) ;
+}
+#set0text{
+  font-size: 25px;
+}
+#logotext{
+  font-size: 30px;
+  color: rgb(100,100,100);
+  text-shadow: 0px 0px 0 rgba(100,100,100,0.66) ;
+}
+#bluesetframe{
+  padding : 0px;
+  margin : 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 20px;
+  border-right: 20px;
+  border-style: solid;
+  border-color: rgb(30,30,30);
+  background-color: rgb(30,30,30);
+}
+#bluesetgroup{
+  background-color: rgb(30,30,30);
+}
+#blueset0{
+  position: relative;
+  background: rgb(25,25,25);
+}
+#blueset1{
+  position: relative;
+  background: rgb(25,25,25);
+}
+#blueset2{
+  position: relative;
+  background: rgb(25,25,25);
+}
+#blueset3{
+  position: relative;
+  background: rgb(25,25,25);
+}
+.settext{
+  padding: 5px 0 5px 0;
+  font-size: 30px;
+  font: normal 16px/normal "Lucida Console", Monaco, monospace;
+  color: rgba(255,255,255,0.9);
+  text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
+}
+#bluebuttongroup{
+  position: relative;
+  border-radius: 0px 0px 10px 10px;
+}
+#bluebutton1 {
+  position: absolute;
+  padding : 0px;
+  margin : 0px;
+  border : 0px;
+  width: 33.3%;
+  text-align: center;
+  background: rgb(231, 126, 35);
+  border-radius: 0px 0px 0px 10px;
+}
+#bluebutton2 {
+  position: absolute;
+  padding : 0px;
+  margin : 0px;
+  border : 0px;
+  width: 33.3%;
+  left: 33.3%;
+  text-align: center;
+  background: rgb(231, 126, 35);
+}
+#bluebutton3 {
+  position: absolute;
+  padding : 0px;
+  margin : 0px;
+  border : 0px;
+  width: 33.3%;
+  left:66.6%;
+  text-align: center;
+  background: rgb(231, 126, 35);
+  border-radius: 0px 0px 10px 0px;
+}
+#blueconbuttons{
+  position: relative;
+  background: rgb(30,30,30);
+}
+#blueconbutton1 {
+  position: absolute;
+  font-size: 30px;
+  padding : 0px;
+  margin : 0px;
+  border : 0px;
+  left: 20px;
+  top: 30px;
+  text-align: center;
+  background: rgb(55,0,55);
+  border: 1px solid #018dc4;
+  border-radius: 10px 0 0 10px;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  color: rgba(255,255,255,0.9);
+  background: #0199d9;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  text-shadow: 0px 0px 0 rgba(15,73,168,0.66);
+  z-index: 100;
+}
+#blueconbutton2 {
+  position: absolute;;
+  font-size: 30px;
+  padding : 0px;
+  margin : 0px;
+  border : 0px;
+  right: 20px;
+  top: 30px;
+  text-align: center;
+  background: rgb(55,0,55);
+  border: 1px solid #018dc4;
+  border-radius: 0 10px 10px 0;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  color: rgba(255,255,255,0.9);
+  background: #0199d9;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  text-shadow: 0px 0px 0 rgba(15,73,168,0.66) ;
+  z-index: 100;
+}
+.conbutton{
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 41px 41px;
+  border: 1px solid #018dc4;
+  -webkit-border-radius: 3px;
+  border-radius: 8px;
+  font: normal 16px/normal "Times New Roman", Times, serif;
+  color: rgba(255,255,255,0.9);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #0199d9;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+#blank{
+  background: rgb(30,30,30);
+  z-index: -2;
+}
+#blank-inner{
+  position: relative;
+  height:auto;
+  border-radius: 50px 50px 50px 50px;
+  background: rgb(28,28,28);
+  border-style: solid;
+  border-color: rgb(30,30,30);
+  z-index: 5;
+}
+#sycbuttons {
+  padding : 0px;
+  margin-top : 100px;
+  border : 0px;
+  width: 100%;
+  background: rgb(100,100,100);
+}
+#fatchbutton {
+  display : inline-block;
+  font-size: 30px;
+  padding : 0px;
+  margin : 0px;
+  border : 0px;
+  width: 50%;
+  height: 30px;
+  text-align: center;
+  background: rgb(55,155,55);
+}
+#sendbutton{
+  display : inline-block;
+  font-size: 30px;
+  padding : 0px;
+  margin : 0px;
+  border : 0px;
+  width: 50%;
+  height: 30px;
+  text-align: center;
+  background: rgb(55,155,55);
+}

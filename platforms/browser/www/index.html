@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/heatapp.css" />
+    <title>Hello World</title>
+  <!--  <script type="text/javascript" src="./js/iscroll.js"></script>
+
+    <script type="text/javascript">
+
+    var myScroll;
+
+    function loaded () {
+    	myScroll = new IScroll('#wrapper', { mouseWheel: true });
+      myScroll2 = new IScroll('#wrapper2', { mouseWheel: true });
+      myScroll3 = new IScroll('#wrapper3', { mouseWheel: true });
+    }
+
+    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+  </script> -->
+
+</head>
+
+<body>
+    <!--<div class="app">-->
+    <div class="app">
+        <!-- <h1>MetaWear</h1>
+        <div id="mainPage">
+            <ul id="deviceList">
+            </ul>
+            <button id="refreshButton">Refresh</button>
+        </div>
+        <div id="detailPage">
+            <div id="resultDiv"></div>
+            <div class="haptic">
+                <label>Pulse Width&nbsp;<input type="number" id="pulseWidthInput" value="500"/></label>&nbsp;ms
+                <div class="buttonDiv">
+                    <button id="motorButton">Motor</button>
+                    <button id="buzzerButton">Buzzer</button>
+                </div>
+            </div>
+            <button id="disconnectButton">Disconnect</button>
+        </div> -->
+        <div id="bluepage">
+          <div id="logo"><div id="logotext" class="vmiddle">LOGOTEXT</div></div>
+          <div id="bluenoti">
+            <div id="bluenoti-inner">
+              <div id="notiin" class="vmiddle">No Device Connected</div>
+            </div>
+          </div>
+          <div id="bluesetframe">
+            <div id="bluesetgroup">
+              <div id="blueset0">
+                <div id="set0text" class="vmiddle">Select A Device To Start</div>
+              </div>
+              <div id="blueset1">
+                <div id="bluesetinner1">
+                  <div class="settext">Device</div>
+                  <input type="text" id="blueset1device" value="DEVICE ID HERE">
+                  <br>
+                  <div class="settext">Name</div>
+                  <input type="text" id="blueset1name" value="ALIAS NAME HERE">
+                </div>
+              </div>
+              <div id="blueset2">
+                <div id="bluesetinner2">
+                  <div class="settext">Device</div>
+                  <input type="text" id="blueset2device" value="DEVICE ID HERE">
+                  <br>
+                  <div class="settext">Name</div>
+                  <input type="text" id="blueset2name" value="ALIAS NAME HERE">
+                </div>
+              </div>
+              <div id="blueset3">
+                <div id="bluesetinner3">
+                  <div class="settext">Device</div>
+                  <input type="text" id="blueset3device" value="DEVICE ID HERE">
+                  <br>
+                  <div class="settext">Name</div>
+                  <input type="text" id="blueset3name" value="ALIAS NAME HERE">
+                </div>
+              </div>
+              <div id="bluebuttongroup">
+                <div id="bluebutton1"><div class="vmiddle">FIRST</div>
+              </div><div id="bluebutton2"><div class="vmiddle">SECOND</div>
+            </div><div id="bluebutton3"><div class="vmiddle">THIRD</div></div>
+              </div>
+            </div>
+          </div>
+          <div id="blueconbuttons">
+            <!--<input type="button" class="conbutton" value="Connect" />
+            <input type="button" class="conbutton" value="Disconnect" />-->
+            <div id="blueconbutton1"><div class="vmiddle">CONNECT</div>
+          </div><div id="blueconbutton2"><div class="vmiddle">DISCONNECT</div></div>
+          </div>
+          <div id="blank"><div id="blank-inner"> </div></div>
+          <!-- <div id="sycbuttons">
+            <div id="fatchbutton">fatching
+            </div><div id="sendbutton">sending</div>
+          </div>
+        </div>-->
+        <svg id="mainchart" width="360", height="720"></svg>
+    </div>
+
+    <!-- </div> -->
+    <script type="text/javascript" src="./js/d3.js"></script>
+    <script type="text/javascript" src="./js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/heatapp.js"></script>
+    <script type="text/javascript" src="./js/filehandle.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
